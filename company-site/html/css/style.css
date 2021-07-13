@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .inline-block {
   display: inline-block;
+  /* padding-right: 30px; */
 }
 
 ol, ul {
@@ -545,7 +546,7 @@ a:focus, a:hover {
 
 .navbar-brand {
   height: auto;
-  padding: 8px 0;
+  padding: 0px 0;
 }
 
 .navbar-brand h1 {
