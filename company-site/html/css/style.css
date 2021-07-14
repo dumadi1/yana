@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .inline-block {
   display: inline-block;
-  /* padding-right: 30px; */
+   padding-top: 30px;
 }
 
 ol, ul {
@@ -679,6 +679,7 @@ a:focus, a:hover {
 
 .hero-slider {
   overflow-x: hidden;
+  
 }
 
 .hero-slider .prevArrow {
@@ -2202,6 +2203,9 @@ a:focus, a:hover {
 @media only screen and (max-width: 767px) {
   .counters-item:before {
     display: none;
+  }
+  .hero-slider {
+    padding-top: 30px;
   }
   .clients-logo-slider {
     text-align: center;
