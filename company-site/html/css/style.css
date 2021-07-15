@@ -49,12 +49,12 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .btn-main {
-  background: #28ABE3;
-  border: 1px solid #28ABE3;
+  background: #004bdf;
+  border: 1px solid #004bdf;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -213,7 +213,7 @@ a:focus, a:hover {
     height: 30px;
     -webkit-transform: translateY(15px);
     transform: translateY(15px);
-    background: #28ABE3;
+    background: #004bdf;
   }
   50%, 100% {
     height: 5px;
@@ -270,7 +270,7 @@ a:focus, a:hover {
   margin: 20px auto 20px;
   position: relative;
   width: 80px;
-  background: #28ABE3;
+  background: #004bdf;
 }
 
 .bg-gray {
@@ -288,7 +288,7 @@ a:focus, a:hover {
 }
 
 .header-bradcrumb a:hover {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .colors-switcher {
@@ -363,7 +363,7 @@ a:focus, a:hover {
 }
 
 .colors-switcher .colors-list a.blue {
-  background-color: #28ABE3;
+  background-color: #004bdf;
 }
 
 .colors-switcher .colors-list a.light-blue {
@@ -415,9 +415,39 @@ a:focus, a:hover {
 ==================================================================*/
 .navigation {
   transition: .3s all;
+
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
   
 }
 
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  color: #004bdf;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
 .navigation .logo-default {
   display: none;
 }
@@ -434,11 +464,11 @@ a:focus, a:hover {
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
   background: none;
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 @media (max-width: 991px) {
@@ -755,7 +785,7 @@ a:focus, a:hover {
 }
 
 .slick-arrow:hover {
-  background: #28ABE3;
+  background: #004bdf;
 }
 
 .prevArrow {
@@ -796,7 +826,7 @@ a:focus, a:hover {
 }
 
 .about .btn-about {
-  background: #28ABE3;
+  background: #004bdf;
 }
 
 .about h4 {
@@ -818,7 +848,7 @@ a:focus, a:hover {
 }
 
 .about .feature-list li i {
-  color: #28ABE3;
+  color: #004bdf;
   margin-right: 8px;
 }
 
@@ -831,6 +861,7 @@ a:focus, a:hover {
 
 .about-2 .checklist {
   padding-left: 30px;
+  padding-top: 70px;
 }
 
 .about-2 .checklist li {
@@ -923,7 +954,7 @@ a:focus, a:hover {
 .contact-form input:hover,
 .contact-form textarea:hover,
 .contact-form #contact-submit:hover {
-  border-color: #28ABE3;
+  border-color: #004bdf;
 }
 
 .contact-form #contact-submit {
@@ -931,7 +962,7 @@ a:focus, a:hover {
   padding: 15px 0;
   width: 100%;
   margin: 0;
-  background: #28ABE3;
+  background: #004bdf;
   color: #fff;
   border-radius: 0;
 }
@@ -969,9 +1000,9 @@ a:focus, a:hover {
 }
 
 .social-icon ul li a:hover {
-  background: #28ABE3;
+  background: #004bdf;
   color: #fff;
-  border: 1px solid #28ABE3;
+  border: 1px solid #004bdf;
 }
 
 .social-icon ul li a:hover i {
@@ -1054,7 +1085,7 @@ a:focus, a:hover {
 .counters-item i {
   font-size: 40px;
   display: inline-block;
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .counters-item h3 {
@@ -1132,7 +1163,7 @@ a:focus, a:hover {
 }
 
 .pricing-table .price-title .value {
-  color: #28ABE3;
+  color: #004bdf;
   font-size: 50px;
   padding: 10px 0;
 }
@@ -1151,14 +1182,14 @@ a:focus, a:hover {
   font-size: 14px;
   padding: 8px 20px;
   text-transform: uppercase;
-  background: #28ABE3;
+  background: #004bdf;
   border: none;
   color: #fff;
   outline: none;
 }
 
 .portfolio-filter button.active {
-  background: #28ABE3;
+  background: #004bdf;
   color: #fff;
   border-radius: 50px;
 }
@@ -1214,7 +1245,7 @@ a:focus, a:hover {
 }
 
 .portfolio-block .caption .search-icon {
-  background: #28ABE3;
+  background: #004bdf;
   color: #fff;
   display: inline-block;
   padding: 4px 13px;
@@ -1230,7 +1261,7 @@ a:focus, a:hover {
 }
 
 .services .service-block.color-bg {
-  background: #28ABE3;
+  background: #004bdf;
   color: #fff;
 }
 
@@ -1244,7 +1275,7 @@ a:focus, a:hover {
 
 .services .service-block i {
   font-size: 75px;
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .services .service-block h3 {
@@ -1276,13 +1307,13 @@ a:focus, a:hover {
 
 .service-2 .service-item:hover i {
   background: #fff;
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .service-2 .service-item i {
   font-size: 30px;
   display: inline-block;
-  background: #28ABE3 none repeat scroll 0 0;
+  background: #004bdf none repeat scroll 0 0;
   border-radius: 30px;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -1313,7 +1344,7 @@ a:focus, a:hover {
 }
 
 .team-skills .progress-block .progress .progress-bar {
-  background: #28ABE3;
+  background: #004bdf;
   box-shadow: none;
 }
 
@@ -1358,7 +1389,7 @@ a:focus, a:hover {
 }
 
 .development-steps .step-2 {
-  background-color: #28ABE3;
+  background-color: #004bdf;
 }
 
 .development-steps .step-2 h4, .development-steps .step-2 p {
@@ -1486,7 +1517,7 @@ a:focus, a:hover {
 ==================================================================*/
 .testimonial {
   padding-top: 100px;
-  background: #28ABE3;
+  background: #004bdf;
   position: relative;
   padding-bottom: 0px;
   margin-bottom: 80px;
@@ -1586,7 +1617,7 @@ a:focus, a:hover {
 }
 
 .post-content blockquote {
-  border-left: 2px solid #28ABE3;
+  border-left: 2px solid #004bdf;
   padding: 40px 35px;
   margin-bottom: 30px;
   background: #eeeeee;
@@ -1613,8 +1644,8 @@ a:focus, a:hover {
 }
 
 .post-content-share li:hover {
-  background: #28ABE3;
-  border-color: #28ABE3;
+  background: #004bdf;
+  border-color: #004bdf;
 }
 
 .post-content-share li:hover i {
@@ -1675,7 +1706,7 @@ a:focus, a:hover {
 }
 
 .comment-list-item .comment-btn:hover {
-  background: #28ABE3;
+  background: #004bdf;
   color: #fff;
 }
 
@@ -1701,7 +1732,7 @@ a:focus, a:hover {
 }
 
 .comment-form .btn-primary {
-  background: #28ABE3;
+  background: #004bdf;
   border-radius: 0;
   padding: 10px 20px;
   border: 0;
@@ -1733,7 +1764,7 @@ a:focus, a:hover {
   right: 0;
   height: 100%;
   width: 50px;
-  background: #28ABE3;
+  background: #004bdf;
   border: 0;
 }
 
@@ -1767,7 +1798,7 @@ a:focus, a:hover {
 }
 
 .widget-categories-list li a:hover {
-  background: #28ABE3;
+  background: #004bdf;
   color: #fff;
   padding-left: 20px;
 }
@@ -1801,7 +1832,7 @@ a:focus, a:hover {
 }
 
 .widget-post-content h5:hover {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 /*=================================================================
@@ -1823,7 +1854,7 @@ a:focus, a:hover {
 }
 
 .post-meta a {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .post-meta > span {
@@ -1884,7 +1915,7 @@ a:focus, a:hover {
 }
 
 .next-prev a:hover {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .next-prev .prev-post i {
@@ -1907,7 +1938,7 @@ a:focus, a:hover {
 }
 
 .social-profile ul li a i:hover {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .comments-section {
@@ -1955,7 +1986,7 @@ a:focus, a:hover {
 }
 
 .comment-wrap .media .media-heading a {
-  color: #28ABE3;
+  color: #004bdf;
   font-size: 13px;
 }
 
@@ -1980,7 +2011,7 @@ a:focus, a:hover {
 
 .comment-reply-form input:focus, .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #28ABE3;
+  border: 1px solid #004bdf;
 }
 
 .comment-reply-form textarea, .comment-reply-form .btn-main {
@@ -2028,7 +2059,7 @@ a:focus, a:hover {
 }
 
 .top-footer li a:hover {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .footer-bottom {
@@ -2060,7 +2091,7 @@ a:focus, a:hover {
 }
 
 .footer-bottom a {
-  color: #28ABE3;
+  color: #004bdf;
 }
 
 .page-404 {
