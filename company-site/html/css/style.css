@@ -2270,27 +2270,20 @@ margin-left: 100px;
     display: none;
   }
   .nav-item{
-
     padding-bottom: 10px;
-
   }
+
   .col-md-12{
     padding-top: 50px;
   }
   .navigation .navbar-light .navbar-nav .nav-item .nav-link {
     color: #fff;
     width: 100px;
-    float: right;
-    /* font-size: 14px;
-    line-height: 1px;
-padding: 20px 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: .2s ease-in-out 0s;
-    background-color: #004bdf;
-    border-radius: 25px;
-    border: 2px solid #004bdf; */
+display:inline-block;
+    /* float: right; */
+
   }
+
 
   .hero-slider {
     padding-top: 30px;
