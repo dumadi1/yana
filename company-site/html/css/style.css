@@ -415,6 +415,7 @@ a:focus, a:hover {
 ==================================================================*/
 .navigation {
   transition: .3s all;
+  
 }
 
 .navigation .logo-default {
@@ -679,7 +680,7 @@ a:focus, a:hover {
 
 .hero-slider {
   overflow-x: hidden;
-  
+
 }
 
 .hero-slider .prevArrow {
