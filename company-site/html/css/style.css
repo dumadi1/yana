@@ -66,7 +66,7 @@ a:focus, a:hover {
 
 .btn-main:hover {
   background-color:#009f2c;
-  color: #004bdf;
+  color: white;
 }
 
 .btn-transparent {
@@ -475,7 +475,7 @@ ul.breadcrumb li a:hover {
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link:hover, .navigation .navbar-light .navbar-nav .nav-item .nav-link:active, .navigation .navbar-light .navbar-nav .nav-item .nav-link:focus {
   background: #009f2c;
-  color: #004bdf;
+  color: white;
 }
 
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
@@ -1318,7 +1318,7 @@ ul.breadcrumb li a:hover {
 
 .service-2 .service-item:hover i {
   background: #009f2c;
-  color: #004bdf;
+  color: white;
 }
 i{
   font-size: 30px;
