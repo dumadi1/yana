@@ -417,12 +417,14 @@ a:focus, a:hover {
 .navigation {
   transition: .3s all;
 
+
 }
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
 
 }
+
 
 /* Display list items side by side */
 ul.breadcrumb li {
@@ -2268,6 +2270,11 @@ margin-left: 100px;
 @media only screen and (max-width: 767px) {
   .counters-item:before {
     display: none;
+  }
+  .navigation .logo-default{
+      width: 110px;
+      height: 110px;
+
   }
   .nav-item{
     padding-bottom: 10px;
