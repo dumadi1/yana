@@ -5,7 +5,7 @@
 .about {
   padding:100px 0;
   background: $light;
-  
+
   .btn-about {
     background: $primary-color;
   }
@@ -15,17 +15,24 @@
   .feature-list {
     margin-top: 10px;
     li {
-      width: 48%;
+      width: 99%;
       display: inline-block;
       color: #666;
-      font-size: 13px;
+      font-size: 26px;
       font-family: $secondary-font;
       margin-bottom: 5px;
       font-weight: 600;
       i {
         color: $primary-color;
         margin-right: 8px;
+        line-height: 0;
+        vertical-align: middle;
       }
+    }
+    span {
+      font-size: 15px !important;
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }

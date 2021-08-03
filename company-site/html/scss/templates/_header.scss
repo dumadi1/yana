@@ -1,7 +1,7 @@
 .logo {
-	margin-top: 10px;
 	display: inline-block;
 }
+
 .single-page-header {
 	background-image: url('../images/about/about-header.jpg');
 	background-size: cover;
@@ -17,5 +17,11 @@
 		right:0;
 		left:0;
 		bottom:0;
+	}
+}
+
+@media (max-width: 991px) {
+	.single-page-header {
+		margin-top:80px;
 	}
 }
