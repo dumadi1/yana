@@ -6,17 +6,15 @@
   .progress-block {
     margin-top: 40px;
     span {
-      display: inline-block;
       margin-bottom: 5px;
       font-size: 14px;
     }
     .progress {
-      box-shadow: none;
+      box-shadow: none !important;
       border-radius: 0;
       height: 10px;
       .progress-bar {
-        background:$primary-color;
-        box-shadow: none;
+        box-shadow: none !important;
       }
     }
   }
@@ -79,9 +77,3 @@
     }
   }
 }
-
-
-
-
-
-

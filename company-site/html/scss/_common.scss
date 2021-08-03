@@ -354,3 +354,28 @@ a:hover {
 .slick-slide {
   outline: none;
 }
+
+.img-fluid {
+  border-radius: 0px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+}
+
+.light-font {
+  color: $light;
+}
+
+.centered-font {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.auto-margin {
+  margin: 0px auto;
+}
+
+.slight-margin-bottom {
+  margin-bottom: 40px;
+}

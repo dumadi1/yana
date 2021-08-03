@@ -72,3 +72,106 @@
     color: $primary-color;
   }
 }
+
+.social-facebook {
+  .facebook-svg {
+    fill: $light;
+    -webkit-transition: all .3s ease-in 0s;
+    -moz-transition: all .3s ease-in 0s;
+    -o-transition: all .3s ease-in 0s;
+    transition: all .3s ease-in 0s;
+  }
+  .facebook-text {
+    color: $light;
+  }
+  &:hover {
+    .facebook-svg {
+      fill: $facebook;
+    }
+    .facebook-text {
+      color: $facebook;
+    }
+  }
+}
+
+.social-twitter {
+  .twitter-svg {
+    fill: $light;
+    -webkit-transition: all .3s ease-in 0s;
+    -moz-transition: all .3s ease-in 0s;
+    -o-transition: all .3s ease-in 0s;
+    transition: all .3s ease-in 0s;
+  }
+  .twitter-text {
+    color: $light;
+  }
+  &:hover {
+    .twitter-svg {
+      fill: $twitter;
+    }
+    .twitter-text {
+      color: $twitter;
+    }
+  }
+}
+
+.social-youtube {
+  .youtube-svg {
+    fill: $light;
+    -webkit-transition: all .3s ease-in 0s;
+    -moz-transition: all .3s ease-in 0s;
+    -o-transition: all .3s ease-in 0s;
+    transition: all .3s ease-in 0s;
+  }
+  .youtube-text {
+    color: $light;
+  }
+  &:hover {
+    .youtube-svg {
+      fill: $youtube;
+    }
+    .youtube-text {
+      color: $youtube;
+    }
+  }
+}
+
+.social-icon-footer {
+  ul {
+    .facebook:hover {
+      background: $facebook;
+      border:2px solid $facebook;
+    }
+    .twitter:hover {
+      background: $twitter;
+      border:2px solid $twitter;
+    }
+    .linkedin:hover {
+      background: $linkedin;
+      border:2px solid $linkedin;
+    }
+    .whatsapp:hover {
+      background: $whatsapp;
+      border:2px solid $whatsapp;
+    }
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      a {
+        display: block;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid $light;
+        text-align: center;
+        i {
+          color: $light;
+          display: inline-block;
+          font-size: 20px;
+          line-height: 50px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
