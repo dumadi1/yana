@@ -9,7 +9,12 @@ p {
   color: #848484;
   font-size: 16px; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Catamaran", sans-serif;
   font-weight: 600; }
 
@@ -17,9 +22,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 !important; }
 
 .inline-block {
-  display: inline-block; }
+display: inline-block; }
 
-ol, ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -28,7 +34,7 @@ figure {
   margin: 0; }
 
 a {
-  -webkit-transition: all .3s ease-in 0s;
+-webkit-transition: all .3s ease-in 0s;
   -moz-transition: all .3s ease-in 0s;
   -o-transition: all .3s ease-in 0s;
   transition: all .3s ease-in 0s; }
@@ -36,7 +42,9 @@ a {
 iframe {
   border: 0; }
 
-a, a:focus, a:hover {
+a,
+a:focus,
+a:hover {
   text-decoration: none;
   outline: 0; }
 
@@ -791,7 +799,7 @@ a:focus, a:hover {
 
 .error {
   padding: 10px;
-  color: #D8000C;
+  color: #d8000c;
   border-radius: 2px;
   font-size: 14px;
   background-color: #FFBABA; }
@@ -803,7 +811,8 @@ a:focus, a:hover {
   font-size: 14px;
   padding: 10px; }
 
-#error, #success {
+#error,
+#success {
   display: none;
   margin-bottom: 10px; }
 
@@ -1573,7 +1582,6 @@ a:focus, a:hover {
 @media only screen and (max-width: 767px) {
   .counters-item:before {
     display: none; }
-
   .clients-logo-slider {
     text-align: center; }
 
@@ -1672,7 +1680,6 @@ a:focus, a:hover {
   /* footer */
   .social-icon ul li, .social-icon ul li:first-child {
     margin: 15px; }
-
   .social-icon ul li a {
     width: 50px;
     height: 50px; }
