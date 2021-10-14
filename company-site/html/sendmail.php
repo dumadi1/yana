@@ -1,22 +1,40 @@
 <?php
-    //we need to get our variables first
-    
-    $email_to =   'support@email.com'; //the address to which the email will be sent
-    $name     =   $_POST['name'];  
-    $email    =   $_POST['email'];
-    $subject  =   $_POST['subject'];
-    $message  =   $_POST['message'];
-    
-    /*the $header variable is for the additional headers in the mail function,
-     we are asigning 2 values, first one is FROM and the second one is REPLY-TO.
-     That way when we want to reply the email gmail(or yahoo or hotmail...) will know 
-     who are we replying to. */
-    $headers  = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    
-    if(mail($email_to, $subject, $message, $headers)){
-        echo 'sent'; // we are sending this text to the ajax request telling it that the mail is sent..      
-    }else{
-        echo 'failed';// ... or this one to tell it that it wasn't sent    
-    }
+require('/var/www/company-site/html/phpmailer/class.phpmailer.php');
+require('/var/www/company-site/html/phpmailer/class.smtp.php');
+
+//Load Composer's autoloader
+require('PHPMailerAutoload.php');
+
+if(isset($_POST['subject']) && isset($_POST['name']) && isset($_POST['message']) && isset($_POST['email'])){
+  $mail = new PHPMailer(true);
+
+  try {
+      //Server settings
+      $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+      $mail->isSMTP();                                            //Send using SMTP
+      $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+      $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+      $mail->Username   = 'partnership-outreach@yanaenergysolutions.com';                     //SMTP username
+      $mail->Password   = 'OUxFpTqITyS0VVggOLw1TSxLJr2Qw2hGXsei3GwkELU242epv5';                               //SMTP password
+      $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+      $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+      //Recipients
+      $mail->setFrom("no-reply@yanaenergysolutions.com", $_POST['name']);
+      $mail->addAddress('partnership-outreach@yanaenergysolutions.com', 'Outreach');     //Add a recipient
+      $mail->addReplyTo($_POST['email'], $_POST['name']);
+
+      //Content
+      $mail->isHTML(false);                                  //Set email format to HTML
+      $mail->Subject = $_POST['name']." - ".$_POST['subject'];
+      $mail->Body    = $_POST['message'];
+      $mail->AltBody = $_POST['message'];
+
+      $mail->send();
+      echo 'sent';
+  } catch (Exception $e) {
+      echo "failed";
+  }
+}
+
 ?>
